@@ -1,0 +1,33 @@
+{
+  "name": "joe-aldens-portfilio",
+  "description": "The portfolio of Joe Alden",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/joealden/joe-aldens-portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joealden/joe-aldens-portfolio.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "dev": "yarn develop"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.127",
+    "gatsby-plugin-glamor": "^1.6.10",
+    "gatsby-plugin-manifest": "^1.0.12",
+    "gatsby-plugin-netlify": "^1.0.11",
+    "glamorous": "^4.11.2",
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}
