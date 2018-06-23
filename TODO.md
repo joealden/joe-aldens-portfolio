@@ -1,3 +1,0 @@
-# TODO
-
-* Get a favicon

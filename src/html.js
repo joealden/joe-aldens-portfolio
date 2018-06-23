@@ -1,25 +1,25 @@
-import React from 'react'
-import favicon from './static/favicon.png'
+import React from "react";
+import favicon from "./static/favicon.png";
 
-let stylesStr
+let stylesStr;
 if (process.env.NODE_ENV === `production`) {
   try {
-    stylesStr = require('!raw-loader!../public/styles.css')
+    stylesStr = require("!raw-loader!../public/styles.css");
   } catch (e) {
-    console.log(e)
+    console.log(e);
   }
 }
 
 class HTML extends React.Component {
   render() {
-    let css
+    let css;
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
           id="gatsby-inlined-css"
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
-      )
+      );
     }
     return (
       <html {...this.props.htmlAttributes}>
@@ -31,16 +31,6 @@ class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <link rel="icon" type="image/png" href={favicon} />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-          />
           {this.props.headComponents}
           {css}
         </head>
@@ -54,8 +44,8 @@ class HTML extends React.Component {
           {this.props.postBodyComponents}
         </body>
       </html>
-    )
+    );
   }
 }
 
-export default HTML
+export default HTML;
