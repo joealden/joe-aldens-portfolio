@@ -14,8 +14,7 @@ module.exports = {
         short_name: `Joe's Portfolio`,
         start_url: "/",
         background_color: "#000000",
-        theme_color: "#000000",
-        icon: "src/static/favicon.png"
+        theme_color: "#000000"
       }
     },
     `gatsby-plugin-eslint`,
