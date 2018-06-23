@@ -17,7 +17,7 @@ const Home = () => (
     <Helmet>
       <title>Joe Alden</title>
     </Helmet>
-    <Main>
+    <main>
       <Heading>Joe Alden</Heading>
       <Subheading>Full Stack Web Developer</Subheading>
       <SocialLinksWrapper>
@@ -73,26 +73,17 @@ const Home = () => (
           </a>
         </SocialLinks>
       </SocialLinksWrapper>
-    </Main>
+    </main>
   </Page>
 );
 
 const Page = styled.div`
-  height: calc(100vh - 6vw);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3vw 3.5vw;
-  box-shadow: 0 0 35px 3px #999;
-
-  @media screen and (max-width: 1000px) {
-    height: calc(100vh - 10vw);
-    margin: 5vw;
-  }
 `;
-
-const Main = styled.main``;
 
 const Heading = styled.h1`
   text-align: center;
