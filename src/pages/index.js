@@ -74,79 +74,8 @@ const Home = () => (
         </SocialLinks>
       </SocialLinksWrapper>
     </main>
-    <TestList>
-      <li>
-        <a href="#">CSS Selector</a>
-      </li>
-      <li>
-        <a href="#">DOM Node</a>
-      </li>
-      <li>
-        <a href="#">Node List</a>
-      </li>
-      <li>
-        <a href="#">CSS Selector</a>
-      </li>
-      <li>
-        <a href="#">DOM Node</a>
-      </li>
-      <li>
-        <a href="#">Node List</a>
-      </li>
-      <li>
-        <a href="#">CSS Selector</a>
-      </li>
-      <li>
-        <a href="#">DOM Node</a>
-      </li>
-      <li>
-        <a href="#">Node List</a>
-      </li>
-      <li>
-        <a href="#">CSS Selector</a>
-      </li>
-      <li>
-        <a href="#">DOM Node</a>
-      </li>
-      <li>
-        <a href="#">Node List</a>
-      </li>
-      <li>
-        <a href="#">CSS Selector</a>
-      </li>
-      <li>
-        <a href="#">DOM Node</a>
-      </li>
-      <li>
-        <a href="#">Node List</a>
-      </li>
-    </TestList>
   </Page>
 );
-
-const TestList = styled.ul`
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 20px;
-
-  li {
-    a {
-      transition: opacity 0.4s ease, color 0.4s ease;
-      color: grey;
-      text-transform: uppercase;
-      padding: 5px;
-      display: block;
-      text-decoration: none;
-
-      &:hover {
-        color: white;
-        transition: none;
-      }
-    }
-  }
-`;
 
 const Page = styled.div`
   height: 100vh;
