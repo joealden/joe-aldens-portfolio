@@ -1,6 +1,7 @@
 {
   "name": "joe-aldens-portfolio",
   "description": "The portfolio of Joe Alden",
+  "author": "Joe Alden <me@joealden.com> (joealden.com)",
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
