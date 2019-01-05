@@ -7,5 +7,10 @@
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
     "no-unused-vars": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

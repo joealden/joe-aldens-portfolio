@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import styled, { injectGlobal } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
-injectGlobal`
+const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
   * {
@@ -13,7 +13,16 @@ injectGlobal`
 `;
 
 const Home = () => (
-  <Page>
+  <>
+    <Page />
+    <GlobalStyles />
+  </>
+);
+
+export default Home;
+
+const Page = () => (
+  <PageWrapper>
     <Helmet>
       <title>Joe Alden</title>
     </Helmet>
@@ -86,10 +95,10 @@ const Home = () => (
         </SocialLinks>
       </SocialLinksWrapper>
     </main>
-  </Page>
+  </PageWrapper>
 );
 
-const Page = styled.div`
+const PageWrapper = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -151,5 +160,3 @@ const SocialLinks = styled.ul`
     }
   }
 `;
-
-export default Home;
