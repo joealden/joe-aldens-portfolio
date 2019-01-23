@@ -3,13 +3,20 @@
     <div>
       <div class="project-image">
         <a :href="link" rel="noreferrer noopener" target="_blank">
-          <img :src="image">
+          <img :src="image" :alt="`Screenshot of ${name}`">
         </a>
       </div>
-      <div class="project-details">
-        <div class="project-name-and-description">
-          <h3>{{ name }}</h3>
-          <h4>{{ description }}</h4>
+      <div class="project-details-and-tags">
+        <div class="project-details">
+          <div class="project-name-and-description">
+            <h3>{{ name }}</h3>
+            <h4>{{ description }}</h4>
+          </div>
+          <div class="project-github-link">
+            <a :href="githubLink" :title="`Link to ${name}'s github Page`">
+              <github-icon></github-icon>
+            </a>
+          </div>
         </div>
         <div class="project-tags">
           <span v-for="tag of tags" :key="tag.name">{{ tag.name }}</span>
@@ -20,8 +27,13 @@
 </template>
 
 <script>
+import githubIcon from "@/components/GithubIcon.vue";
+
 export default {
   name: "Project",
+  components: {
+    githubIcon
+  },
   props: {
     name: {
       type: String,
@@ -123,7 +135,7 @@ export default {
       }
     }
 
-    .project-details {
+    .project-details-and-tags {
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -134,26 +146,57 @@ export default {
         padding: 4.52vw 0;
       }
 
-      .project-name-and-description {
-        h3,
-        h4 {
-          margin: 0;
-          font-size: 1.1rem;
+      .project-details {
+        display: flex;
+        justify-content: space-between;
+
+        .project-name-and-description {
+          h3,
+          h4 {
+            margin: 0;
+            font-size: 1.1rem;
+          }
+
+          h4 {
+            margin-top: 3px;
+            color: #9b9b9b;
+          }
         }
 
-        h4 {
-          margin-top: 3px;
-          color: #9b9b9b;
+        .project-github-link {
+          margin-right: 60px;
+
+          @media screen and (max-width: 1660px) {
+            margin-right: 3.61vw;
+          }
+
+          a {
+            display: block;
+
+            svg {
+              display: block;
+              width: 40px;
+              height: 40px;
+            }
+          }
         }
       }
     }
   }
 
-  &:nth-child(2n - 1) > div {
+  /**
+   * NOTE:
+   * The below CSS turns on an alterating pattern
+   * for the project list. 
+   *
+   * Replace the `> div` selector
+   * with `&:nth-child(2n - 1) > div`.
+   */
+  > div {
     .project-image {
       margin-right: 60px;
     }
-    .project-details {
+    .project-details-and-tags {
       margin-left: 60px;
     }
 
@@ -161,30 +204,36 @@ export default {
       .project-image {
         margin-right: 3.61vw;
       }
-      .project-details {
+      .project-details-and-tags {
         margin-left: 3.61vw;
       }
     }
   }
 
-  &:nth-child(2n) > div {
-    flex-direction: row-reverse;
-
-    .project-image {
-      margin-left: 60px;
-    }
-    .project-details {
-      margin-right: 60px;
-    }
-
-    @media screen and (max-width: 1660px) {
-      .project-image {
-        margin-left: 3.61vw;
-      }
-      .project-details {
-        margin-right: 3.61vw;
-      }
-    }
-  }
+  /**
+   * NOTE:
+   * The below CSS turns on an alterating pattern
+   * for the project list.
+   *
+   * &:nth-child(2n) > div {
+   *   flex-direction: row-reverse;
+   *
+   *   .project-image {
+   *     margin-left: 60px;
+   *   }
+   *   .project-details-and-tags {
+   *     margin-right: 60px;
+   *   }
+   *
+   *   @media screen and (max-width: 1660px) {
+   *     .project-image {
+   *       margin-left: 3.61vw;
+   *     }
+   *     .project-details-and-tags {
+   *       margin-right: 3.61vw;
+   *     }
+   *   }
+   * }
+   */
 }
 </style>

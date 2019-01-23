@@ -104,10 +104,10 @@ export default {
   display: flex;
   align-items: center;
   min-height: 200px;
-  padding: 120px 0 150px 0;
+  padding: 175px 0;
 
   @media screen and (max-width: 1660px) {
-    padding: 7.23vw 0 9.03vw 0;
+    padding: 10.54vw 0;
   }
 
   h1,
