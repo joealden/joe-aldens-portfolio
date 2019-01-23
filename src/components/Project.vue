@@ -2,7 +2,12 @@
   <div class="project">
     <div>
       <div class="project-image">
-        <a :href="link" rel="noreferrer noopener" target="_blank" title="Visit the live site">
+        <a
+          :href="link"
+          rel="noreferrer noopener"
+          target="_blank"
+          title="Visit the live site"
+        >
           <img :src="image" :alt="`Screenshot of ${name}`">
         </a>
       </div>
@@ -13,7 +18,12 @@
             <h4>{{ description }}</h4>
           </div>
           <div class="project-github-link">
-            <a :href="githubLink" :title="`${name}'s github Page`">
+            <a
+              :href="githubLink"
+              rel="noreferrer noopener"
+              target="_blank"
+              :title="`${name}'s github Page`"
+            >
               <github-icon></github-icon>
             </a>
           </div>
