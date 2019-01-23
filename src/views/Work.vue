@@ -192,7 +192,8 @@ export default {
 #header {
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   min-height: 200px;
   padding: 175px 0;
 
