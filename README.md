@@ -5,12 +5,12 @@
 - Implement the "About" page
   - Paragraph talking about me
   - List of technologies (Languages and Libraries) that I have experience in
-    - Semantic HTML
+    - Modern HTML (HTML5)
     - Modern JavaScript (ES2015+)
     - Modern CSS (Flexbox, Grid etc.)
     - CSS Preprocessors (SCSS, Stylus)
-    - Functional Programming
     - Uniting Testing (Jest)
+    - Functional Programming
     - TypeScript
     - React
       - Gatsby
