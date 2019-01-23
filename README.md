@@ -2,7 +2,7 @@
 
 ## TODO
 
-- Implement the "About"page
+- Implement the "About" page
   - Paragraph talking about me
   - List of technologies (Languages and Libraries) that I have experience in
     - Semantic HTML
@@ -43,6 +43,11 @@
       - Further Functional Programmimg
       - Systems Programming
       - Graphics Programming
+- Implement the "Contact" page
+  - Links to the following:
+    - Email
+    - Github
+    - Twitter
 - Ask Jsutts for changes to the images
 - Get images compressed so they aren't massive
 - Write README
