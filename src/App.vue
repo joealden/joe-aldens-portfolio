@@ -2,7 +2,7 @@
   <div>
     <div id="nav-wrapper">
       <div id="inner-nav-wrapper">
-        <router-link to="/">Home</router-link>
+        <router-link to="/">Work</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/contact">Contact</router-link>
       </div>
@@ -30,11 +30,6 @@ html {
 @media screen and (max-width: 2000px) {
   html {
     font-size: 18px;
-  }
-}
-@media screen and (max-width: 1300px) {
-  html {
-    font-size: 16px;
   }
 }
 
@@ -79,11 +74,19 @@ button::-moz-focus-inner {
 
 #nav-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: black;
+  }
 }
 
 #inner-nav-wrapper {
-  max-width: 1600px;
+  max-width: 1660px;
   width: 100%;
   display: flex;
 
@@ -94,10 +97,7 @@ button::-moz-focus-inner {
     color: #9b9b9b;
     outline: none;
     padding: 30px;
-
-    &:first-child {
-      padding: 30px 30px 30px 0;
-    }
+    font-size: 0.8rem;
 
     &:hover {
       color: black;
