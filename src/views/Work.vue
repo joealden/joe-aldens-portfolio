@@ -48,8 +48,31 @@ export default {
             {
               name: "React",
               link: "https://reactjs.org/"
+            },
+            {
+              name: "TypeScript",
+              link: "https://www.typescriptlang.org/"
+            },
+            {
+              name: "Gatsby",
+              link: "https://www.gatsbyjs.org/"
+            },
+            {
+              name: "Styled Components",
+              link: "https://www.styled-components.com/"
+            },
+            {
+              name: "Jest",
+              link: "https://jestjs.io/"
+            },
+            {
+              name: "Contentful",
+              link: "https://www.contentful.com/"
+            },
+            {
+              name: "Netlify",
+              link: "https://www.netlify.com/"
             }
-            /* TODO */
           ]
         },
         {
@@ -62,8 +85,51 @@ export default {
             {
               name: "React",
               link: "https://reactjs.org/"
+            },
+            {
+              name: "TypeScript",
+              link: "https://www.typescriptlang.org/"
+            },
+            {
+              name: "Next",
+              link: "https://nextjs.org/"
+            },
+            {
+              name: "Apollo Client",
+              link: "https://www.apollographql.com/docs/react/"
+            },
+            {
+              name: "Styled Components",
+              link: "https://www.styled-components.com/"
+            },
+            {
+              name: "Ramda",
+              link: "https://ramdajs.com/"
+            },
+            {
+              name: "Node",
+              link: "https://nodejs.org/en/"
+            },
+            {
+              name: "Express",
+              link: "https://expressjs.com/"
+            },
+            {
+              name: "Prisma",
+              link: "https://www.prisma.io/"
+            },
+            {
+              name: "JWTs",
+              link: "https://jwt.io/"
+            },
+            {
+              name: "GraphQL Subscriptions",
+              link: "https://www.howtographql.com/react-apollo/8-subscriptions/"
+            },
+            {
+              name: "Zeit Now",
+              link: "https://zeit.co/now"
             }
-            /* TODO */
           ]
         },
         {
@@ -76,10 +142,34 @@ export default {
             {
               name: "Vue",
               link: "https://vuejs.org/"
+            },
+            {
+              name: "Nuxt",
+              link: "https://nuxtjs.org/"
+            },
+            {
+              name: "Apollo Client",
+              link: "https://vue-apollo.netlify.com/"
+            },
+            {
+              name: "Stylus",
+              link: "http://stylus-lang.com/"
+            },
+            {
+              name: "Graphcool Framework",
+              link: "https://www.graph.cool/"
+            },
+            {
+              name: "ESLint",
+              link: "https://eslint.org/"
+            },
+            {
+              name: "Zeit Now",
+              link: "https://zeit.co/now"
             }
-            /* TODO */
           ]
         }
+        /* TODO: Add px-to-vw */
       ]
     };
   }
@@ -130,7 +220,7 @@ export default {
 }
 
 #contact-link-wrapper {
-  background-color: lightgrey;
+  background-color: #080808;
   width: 100%;
   height: 300px;
   display: flex;
@@ -143,7 +233,12 @@ export default {
     align-items: center;
     height: 100%;
     width: 100%;
-    color: black;
+    color: white;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #19f2be;
+    }
   }
 }
 </style>

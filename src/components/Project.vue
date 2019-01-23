@@ -22,14 +22,42 @@
               :href="githubLink"
               rel="noreferrer noopener"
               target="_blank"
-              :title="`${name}'s github Page`"
+              :title="`${name}'s github page`"
             >
               <github-icon></github-icon>
             </a>
           </div>
         </div>
         <div class="project-tags">
-          <span v-for="tag of tags" :key="tag.name">{{ tag.name }}</span>
+          <h5>Technologies Used:</h5>
+          <div>
+            <template v-for="tag of tags">
+              <span :key="tag.name">
+                <a
+                  :href="tag.link"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  :title="
+                    /* Ensure correct pluralisation of tags */
+                    tag.name.slice(-1) === 's' 
+                    ? `${tag.name}' website`
+                    : `${tag.name}'s website`
+                  "
+                >
+                  {{
+                  /**
+                  * Replace regular spaces with non-breaking
+                  * spaces so that multi-word tags don't break.
+                  */
+                  tag.name.split(" ").join("&nbsp;")
+                  }}
+                </a>
+              </span>
+              <span
+                :key="tag.name"
+              >{{ tag === tags[tags.length - 1] ? "." : ", " }}</span>
+            </template>
+          </div>
         </div>
       </div>
     </div>
@@ -168,7 +196,7 @@ export default {
           }
 
           h4 {
-            margin-top: 3px;
+            margin-top: 4px;
             color: #9b9b9b;
           }
         }
@@ -200,14 +228,6 @@ export default {
     }
   }
 
-  /**
-   * NOTE:
-   * The below CSS turns on an alterating pattern
-   * for the project list. 
-   *
-   * Replace the `> div` selector
-   * with `&:nth-child(2n - 1) > div`.
-   */
   > div {
     .project-image {
       margin-right: 60px;
@@ -225,31 +245,31 @@ export default {
       }
     }
   }
+}
 
-  /**
-   * NOTE:
-   * The below CSS turns on an alterating pattern
-   * for the project list.
-   *
-   * &:nth-child(2n) > div {
-   *   flex-direction: row-reverse;
-   *
-   *   .project-image {
-   *     margin-left: 60px;
-   *   }
-   *   .project-details-and-tags {
-   *     margin-right: 60px;
-   *   }
-   *
-   *   @media screen and (max-width: 1660px) {
-   *     .project-image {
-   *       margin-left: 3.61vw;
-   *     }
-   *     .project-details-and-tags {
-   *       margin-right: 3.61vw;
-   *     }
-   *   }
-   * }
-   */
+.project-tags {
+  h5 {
+    margin: 0 0 12px 0;
+
+    @media screen and (max-width: 1660px) {
+      margin: 0 0 0.7229vw 0;
+    }
+  }
+
+  > div {
+    color: #9b9b9b;
+    max-width: 80%;
+
+    a {
+      display: inline-block;
+      outline: none;
+      color: #9b9b9b;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
 }
 </style>
