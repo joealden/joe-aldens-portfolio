@@ -1,39 +1,48 @@
 # joe-aldens-portfolio
 
-## Notes
+## TODO
 
-- Foreground colours: #000000 (black) and #9B9B9B (grey)
-
-## Project setup
-
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Run your tests
-
-```
-npm run test
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Implement the "About"page
+  - Paragraph talking about me
+  - List of technologies (Languages and Libraries) that I have experience in
+    - Semantic HTML
+    - Modern JavaScript (ES2015+)
+    - Modern CSS (Flexbox, Grid etc.)
+    - CSS Preprocessors (SCSS, Stylus)
+    - Functional Programming
+    - Uniting Testing (Jest)
+    - TypeScript
+    - React
+      - Gatsby
+      - Next
+      - Styled Components
+    - GraphQL
+      - Apollo Client
+      - GraphQL Yoga
+      - Prisma
+    - Vue
+      - Vue CLI
+      - Nuxt
+      - Vue Router
+      - Vuex
+    - Ramda
+    - Lodash
+    - Contentful
+    - Webpack
+    - Babel
+    - Netlify
+    - Zeit Now
+  - List of technologies that I would like to learn more about
+    - Languages
+      - Rust
+      - Reason (OCaml)
+      - Go
+      - C/C++
+    - Other
+      - Docker
+      - Further Functional Programmimg
+      - Systems Programming
+      - Graphics Programming
+- Ask Jsutts for changes to the images
+- Get images compressed so they aren't massive
+- Write README
