@@ -48,6 +48,7 @@
     - Email
     - Github
     - Twitter
+- Add link to the bottom of pages to github page of portfolio
 - Ask Jsutts for changes to the images
 - Get images compressed so they aren't massive
 - Write README
