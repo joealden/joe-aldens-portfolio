@@ -18,14 +18,13 @@
         ></project>
       </div>
     </div>
-    <div id="contact-link-wrapper">
-      <router-link to="/contact">Get in Touch</router-link>
-    </div>
+    <contact-link></contact-link>
   </div>
 </template>
 
 <script>
 import Project from "@/components/Project.vue";
+import ContactLink from "@/components/ContactLink.vue";
 
 import listedImage from "@/assets/listed-showcase.png";
 import talqImage from "@/assets/talq-showcase.png";
@@ -33,7 +32,8 @@ import corumImage from "@/assets/corum-showcase.png";
 
 export default {
   components: {
-    Project
+    Project,
+    ContactLink
   },
   data() {
     return {
@@ -226,28 +226,5 @@ export default {
 
 #projects {
   width: 100%;
-}
-
-#contact-link-wrapper {
-  background-color: #080808;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    color: white;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #19f2be;
-    }
-  }
 }
 </style>
