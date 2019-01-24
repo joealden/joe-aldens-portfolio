@@ -243,7 +243,7 @@ export default {
           name: "Functional Programming"
         },
         {
-          name: "UNIX (Linux) Operating Systems"
+          name: "Linux Based Operating Systems"
         },
         {
           name: "Uniting Testing (Jest)",
