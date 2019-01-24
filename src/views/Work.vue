@@ -194,7 +194,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 200px;
   padding: 175px 0;
 
   @media screen and (max-width: 1660px) {
