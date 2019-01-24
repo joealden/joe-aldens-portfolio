@@ -215,10 +215,6 @@ export default {
     font-size: 1.5rem;
   }
 
-  h1 {
-    margin-right: 10px;
-  }
-
   h2 {
     color: #9b9b9b;
   }
