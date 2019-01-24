@@ -160,7 +160,8 @@ export default {
     outline: none;
 
     @media screen and (min-width: 1151px) {
-      &:hover {
+      &:hover,
+      &:focus {
         &:after {
           opacity: 1;
           visibility: visible;
@@ -252,6 +253,14 @@ export default {
 
   a {
     display: block;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: black;
+      }
+    }
 
     svg {
       display: block;
@@ -259,10 +268,6 @@ export default {
       height: 40px;
       fill: #9b9b9b;
       transition: fill 0.3s ease;
-
-      &:hover {
-        fill: black;
-      }
 
       @media screen and (max-width: 1150px) {
         width: 6vw;
@@ -306,7 +311,8 @@ export default {
       color: #9b9b9b;
       transition: color 0.3s ease;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: black;
       }
     }

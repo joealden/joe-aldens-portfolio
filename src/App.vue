@@ -99,7 +99,8 @@ button::-moz-focus-inner {
     padding: 30px;
     font-size: 0.8rem;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: black;
     }
 
