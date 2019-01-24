@@ -127,115 +127,104 @@ export default {
 
   > div {
     display: flex;
+  }
+}
 
-    .project-image {
-      flex: 1;
+.project-image {
+  flex: 1;
+  margin-right: 60px;
 
-      a {
-        display: block;
-        position: relative;
-        outline: none;
-
-        &:hover {
-          &:after {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-
-        &:after {
-          content: "Visit";
-          display: flex;
-          color: white;
-          align-items: center;
-          justify-content: center;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          opacity: 0;
-          visibility: hidden;
-          transition: opacity 0.3s ease, visibility 0.3s ease;
-          background-color: rgba(0, 0, 0, 0.7);
-        }
-
-        img {
-          display: block;
-          width: 100%;
-        }
-      }
-    }
-
-    .project-details-and-tags {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 75px 0;
-
-      @media screen and (max-width: 1660px) {
-        padding: 4.52vw 0;
-      }
-
-      .project-details {
-        display: flex;
-        justify-content: space-between;
-
-        .project-name-and-description {
-          h3,
-          h4 {
-            margin: 0;
-            font-size: 1.1rem;
-          }
-
-          h4 {
-            margin-top: 4px;
-            color: #9b9b9b;
-          }
-        }
-
-        .project-github-link {
-          margin-right: 60px;
-
-          @media screen and (max-width: 1660px) {
-            margin-right: 3.61vw;
-          }
-
-          a {
-            display: block;
-
-            svg {
-              display: block;
-              width: 40px;
-              height: 40px;
-              fill: #9b9b9b;
-              transition: fill 0.3s ease;
-
-              &:hover {
-                fill: black;
-              }
-            }
-          }
-        }
-      }
-    }
+  @media screen and (max-width: 1660px) {
+    margin-right: 3.61vw;
   }
 
-  > div {
-    .project-image {
-      margin-right: 60px;
-    }
-    .project-details-and-tags {
-      margin-left: 60px;
+  a {
+    display: block;
+    position: relative;
+    outline: none;
+
+    &:hover {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
     }
 
-    @media screen and (max-width: 1660px) {
-      .project-image {
-        margin-right: 3.61vw;
-      }
-      .project-details-and-tags {
-        margin-left: 3.61vw;
+    &:after {
+      content: "Visit";
+      display: flex;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.project-details-and-tags {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 75px 0;
+  margin-left: 60px;
+
+  @media screen and (max-width: 1660px) {
+    padding: 4.52vw 0;
+    margin-left: 3.61vw;
+  }
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-name-and-description {
+  h3,
+  h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    margin-top: 4px;
+    color: #9b9b9b;
+  }
+}
+
+.project-github-link {
+  margin-right: 60px;
+
+  @media screen and (max-width: 1660px) {
+    margin-right: 3.61vw;
+  }
+
+  a {
+    display: block;
+
+    svg {
+      display: block;
+      width: 40px;
+      height: 40px;
+      fill: #9b9b9b;
+      transition: fill 0.3s ease;
+
+      &:hover {
+        fill: black;
       }
     }
   }
