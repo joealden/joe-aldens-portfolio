@@ -115,6 +115,10 @@ export default {
     @media screen and (max-width: 1660px) {
       margin: 4.82vw 0;
     }
+
+    @media screen and (max-width: 1150px) {
+      margin: 10vw 0;
+    }
   }
 
   &:last-child {
@@ -123,10 +127,18 @@ export default {
     @media screen and (max-width: 1660px) {
       margin-bottom: 9.64vw;
     }
+
+    @media screen and (max-width: 1150px) {
+      margin-bottom: 20vw;
+    }
   }
 
   > div {
     display: flex;
+
+    @media screen and (max-width: 1150px) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -138,33 +150,39 @@ export default {
     margin-right: 3.61vw;
   }
 
+  @media screen and (max-width: 1150px) {
+    margin-right: 0;
+  }
+
   a {
     display: block;
     position: relative;
     outline: none;
 
-    &:hover {
-      &:after {
-        opacity: 1;
-        visibility: visible;
+    @media screen and (min-width: 1151px) {
+      &:hover {
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
       }
-    }
 
-    &:after {
-      content: "Visit";
-      display: flex;
-      color: white;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-      background-color: rgba(0, 0, 0, 0.7);
+      &:after {
+        content: "Visit";
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
     }
 
     img {
@@ -186,11 +204,21 @@ export default {
     padding: 4.52vw 0;
     margin-left: 3.61vw;
   }
+
+  @media screen and (max-width: 1150px) {
+    margin-left: 0;
+    padding: 10vw 0 0 0;
+    justify-content: flex-start;
+  }
 }
 
 .project-details {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1150px) {
+    margin-bottom: 5vw;
+  }
 }
 
 .project-name-and-description {
@@ -203,6 +231,11 @@ export default {
   h4 {
     margin-top: 4px;
     color: #9b9b9b;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+      margin-right: 50px;
+    }
   }
 }
 
@@ -211,6 +244,10 @@ export default {
 
   @media screen and (max-width: 1660px) {
     margin-right: 3.61vw;
+  }
+
+  @media screen and (max-width: 1150px) {
+    margin-right: 0;
   }
 
   a {
@@ -226,6 +263,14 @@ export default {
       &:hover {
         fill: black;
       }
+
+      @media screen and (max-width: 1150px) {
+        width: 6vw;
+        height: 6vw;
+        min-width: 40px;
+        min-height: 40px;
+        fill: black;
+      }
     }
   }
 }
@@ -237,11 +282,23 @@ export default {
     @media screen and (max-width: 1660px) {
       margin: 0 0 0.7229vw 0;
     }
+
+    @media screen and (max-width: 1150px) {
+      margin: 0 0 1vw 0;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin: 0 0 1.75vw 0;
+    }
   }
 
   > div {
     color: #9b9b9b;
     max-width: 80%;
+
+    @media screen and (max-width: 750px) {
+      font-size: 0.9rem;
+    }
 
     a {
       display: inline-block;

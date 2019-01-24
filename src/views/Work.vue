@@ -201,6 +201,14 @@ export default {
     padding: 10.54vw 0;
   }
 
+  @media screen and (max-width: 1150px) {
+    padding: 15vw 0;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding: 112px 0;
+  }
+
   h1,
   h2 {
     margin: 0;
