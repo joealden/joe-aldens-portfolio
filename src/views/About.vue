@@ -243,12 +243,16 @@ export default {
             "https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor/"
         },
         {
+          name: "Functional Programming"
+        },
+        {
+          name: "UNIX (Linux) Operating Systems"
+        },
+        {
           name: "Uniting Testing (Jest)",
           link: "https://jestjs.io/"
         },
-        {
-          name: "Functional Programming"
-        },
+
         {
           name: "TypeScript",
           link: "https://www.typescriptlang.org/"
@@ -276,10 +280,7 @@ export default {
             name: "Vue",
             link: "https://vuejs.org/"
           },
-          {
-            name: "Vue CLI 3",
-            link: "https://cli.vuejs.org/"
-          },
+
           {
             name: "Nuxt",
             link: "https://nuxtjs.org/"
@@ -291,6 +292,10 @@ export default {
           {
             name: "Vuex",
             link: "https://vuex.vuejs.org/"
+          },
+          {
+            name: "Vue CLI 3",
+            link: "https://cli.vuejs.org/"
           }
         ],
         [
@@ -299,16 +304,16 @@ export default {
             link: "https://graphql.org/"
           },
           {
+            name: "Prisma",
+            link: "https://www.prisma.io/"
+          },
+          {
             name: "Apollo Client",
             link: "https://www.apollographql.com/docs/react/"
           },
           {
             name: "GraphQL Yoga",
             link: "https://github.com/prisma/graphql-yoga/"
-          },
-          {
-            name: "Prisma",
-            link: "https://www.prisma.io/"
           }
         ],
         {
@@ -361,6 +366,10 @@ export default {
         {
           name: "Go",
           link: "https://golang.org/"
+        },
+        {
+          name: "Haskell",
+          link: "https://www.haskell.org/"
         },
         {
           name: "C/C++"
