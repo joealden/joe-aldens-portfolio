@@ -31,8 +31,12 @@
         <div class="project-tags">
           <h5>Technologies Used:</h5>
           <div>
-            <template v-for="tag of tags">
-              <span :key="tag.name">
+            <span
+              v-for="tag of tags"
+              :key="tag.name"
+              class="project-tag-and-punctuation"
+            >
+              <span>
                 <a
                   :href="tag.link"
                   rel="noreferrer noopener"
@@ -43,20 +47,10 @@
                     ? `${tag.name}' website`
                     : `${tag.name}'s website`
                   "
-                >
-                  {{
-                  /**
-                  * Replace regular spaces with non-breaking
-                  * spaces so that multi-word tags don't break.
-                  */
-                  tag.name.split(" ").join("&nbsp;")
-                  }}
-                </a>
+                >{{ tag.name }}</a>
               </span>
-              <span
-                :key="tag.name"
-              >{{ tag === tags[tags.length - 1] ? "." : ", " }}</span>
-            </template>
+              <span>{{ tag === tags[tags.length - 1] ? "." : ",&nbsp;" }}</span>
+            </span>
           </div>
         </div>
       </div>
@@ -271,5 +265,9 @@ export default {
       }
     }
   }
+}
+
+.project-tag-and-punctuation {
+  display: inline-block;
 }
 </style>
