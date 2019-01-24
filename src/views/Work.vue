@@ -190,10 +190,8 @@ export default {
 }
 
 #header {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 175px 0;
 
   @media screen and (max-width: 1660px) {
