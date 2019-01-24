@@ -280,7 +280,6 @@ export default {
             name: "Vue",
             link: "https://vuejs.org/"
           },
-
           {
             name: "Nuxt",
             link: "https://nuxtjs.org/"
