@@ -157,11 +157,9 @@ export default {
   a {
     display: block;
     position: relative;
-    outline: none;
 
     @media screen and (min-width: 1151px) {
-      &:hover,
-      &:focus {
+      &:hover {
         &:after {
           opacity: 1;
           visibility: visible;
@@ -253,10 +251,8 @@ export default {
 
   a {
     display: block;
-    outline: none;
 
-    &:hover,
-    &:focus {
+    &:hover {
       svg {
         stroke: black;
       }
@@ -307,12 +303,10 @@ export default {
 
     a {
       display: inline-block;
-      outline: none;
       color: #9b9b9b;
       transition: color 0.3s ease;
 
-      &:hover,
-      &:focus {
+      &:hover {
         color: black;
       }
     }

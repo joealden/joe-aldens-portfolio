@@ -201,11 +201,9 @@
 
   a {
     color: #9b9b9b;
-    outline: none;
     transition: color 0.3s ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: black;
     }
   }

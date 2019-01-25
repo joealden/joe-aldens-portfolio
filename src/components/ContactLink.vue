@@ -28,8 +28,7 @@ export default {
     color: white;
     transition: color 0.3s ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: #19f2be;
     }
   }
