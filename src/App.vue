@@ -47,6 +47,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
+  color: black;
 }
 
 @media screen and (max-width: 2000px) {
@@ -73,6 +74,12 @@ h6 {
 
 a {
   text-decoration: none;
+  color: #9b9b9b;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: black;
+  }
 }
 
 /* --------------------- End of CSS Reset --------------------- */
@@ -109,12 +116,6 @@ a {
   a {
     padding: 30px;
     font-size: 0.8rem;
-    color: #9b9b9b;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: black;
-    }
 
     &.router-link-exact-active {
       color: black;

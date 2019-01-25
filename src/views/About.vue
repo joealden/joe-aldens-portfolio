@@ -184,10 +184,7 @@
 
   ul {
     margin: 0;
-
     list-style: square;
-    /* Bullet point colour */
-    color: black;
   }
 
   li {
@@ -196,15 +193,6 @@
 
   span {
     color: #9b9b9b;
-  }
-
-  a {
-    color: #9b9b9b;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: black;
-    }
   }
 }
 </style>

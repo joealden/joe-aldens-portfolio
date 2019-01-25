@@ -302,12 +302,6 @@ export default {
 
     a {
       display: inline-block;
-      color: #9b9b9b;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: black;
-      }
     }
   }
 }
