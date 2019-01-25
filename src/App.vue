@@ -2,14 +2,36 @@
   <div>
     <div id="nav-wrapper">
       <div id="inner-nav-wrapper">
-        <router-link to="/">Work</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <div id="nav-links">
+          <router-link to="/">Work</router-link>
+          <router-link to="/about">About</router-link>
+          <router-link to="/contact">Contact</router-link>
+        </div>
+        <div id="github-link">
+          <a
+            href="https://github.com/joealden"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <github-icon></github-icon>
+          </a>
+        </div>
       </div>
     </div>
     <router-view></router-view>
   </div>
 </template>
+
+<script>
+import GithubIcon from "@/components/GithubIcon.vue";
+
+export default {
+  components: {
+    GithubIcon
+  }
+};
+</script>
+
 
 <style lang="scss">
 /* -------------------------- CSS Reset -------------------------- */
@@ -52,24 +74,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  border: none;
-  background: none;
-  font-weight: normal;
-  padding: 10px;
-  cursor: pointer;
-  font-size: inherit; /* Chrome needs explicit setting of this */
-}
-
-button:focus {
-  outline: none;
-}
-
-/* Disables the focus outline that is only present on Firefox */
-button::-moz-focus-inner {
-  border: 0;
-}
-
 /* --------------------- End of CSS Reset --------------------- */
 
 #nav-wrapper {
@@ -86,26 +90,51 @@ button::-moz-focus-inner {
 }
 
 #inner-nav-wrapper {
+  display: flex;
+  align-items: center;
   max-width: 1660px;
   width: 100%;
-  display: flex;
+  justify-content: space-between;
 
   a {
     display: block;
-    color: black;
-    transition: color 0.3s ease;
-    color: #9b9b9b;
-    outline: none;
+    outline-color: black;
+  }
+}
+
+#nav-links {
+  display: flex;
+
+  a {
     padding: 30px;
     font-size: 0.8rem;
+    color: #9b9b9b;
+    transition: color 0.3s ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: black;
     }
 
     &.router-link-exact-active {
       color: black;
+    }
+  }
+}
+
+#github-link {
+  display: block;
+
+  a {
+    padding: 20px 30px;
+
+    svg {
+      display: block;
+      stroke: #9b9b9b;
+      transition: stroke 0.3s ease;
+    }
+
+    &:hover svg {
+      stroke: black;
     }
   }
 }
