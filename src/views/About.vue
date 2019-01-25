@@ -129,7 +129,6 @@
   }
 
   h1 {
-    margin: 0;
     font-size: 1.5rem;
   }
 }
@@ -176,7 +175,7 @@
 .technology-list {
   h2 {
     font-size: 1.1rem;
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
 
     @media screen and (max-width: 900px) {
       margin-bottom: 35px;

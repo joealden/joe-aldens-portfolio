@@ -223,7 +223,6 @@ export default {
 .project-name-and-description {
   h3,
   h4 {
-    margin: 0;
     font-size: 1.1rem;
   }
 
@@ -278,18 +277,18 @@ export default {
 
 .project-tags {
   h5 {
-    margin: 0 0 12px 0;
+    margin-bottom: 12px;
 
     @media screen and (max-width: 1660px) {
-      margin: 0 0 0.7229vw 0;
+      margin-bottom: 0.7229vw;
     }
 
     @media screen and (max-width: 1150px) {
-      margin: 0 0 1vw 0;
+      margin-bottom: 1vw;
     }
 
     @media screen and (max-width: 500px) {
-      margin: 0 0 1.75vw 0;
+      margin-bottom: 1.75vw;
     }
   }
 

@@ -68,6 +68,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  margin: 0;
 }
 
 a {
