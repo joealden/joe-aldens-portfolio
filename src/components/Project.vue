@@ -258,7 +258,7 @@ export default {
     &:hover,
     &:focus {
       svg {
-        fill: black;
+        stroke: black;
       }
     }
 
@@ -266,15 +266,15 @@ export default {
       display: block;
       width: 40px;
       height: 40px;
-      fill: #9b9b9b;
-      transition: fill 0.3s ease;
+      stroke: #9b9b9b;
+      transition: stroke 0.3s ease;
 
       @media screen and (max-width: 1150px) {
-        width: 6vw;
-        height: 6vw;
+        width: 5vw;
+        height: 5vw;
         min-width: 40px;
         min-height: 40px;
-        fill: black;
+        stroke: black;
       }
     }
   }
