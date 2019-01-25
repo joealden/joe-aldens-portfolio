@@ -16,35 +16,26 @@
           suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
         </p>
       </div>
-      <div id="contact-links">
-        <div id="contact-links-inner">
-          <div class="contact-item">
-            <a
-              href="https://github.com/joealden"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <github-icon></github-icon>
-            </a>
-          </div>
-          <div class="contact-item">
-            <a
-              href="https://twitter.com/joealden_"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <twitter-icon></twitter-icon>
-            </a>
-          </div>
-          <div class="contact-item">
-            <a
-              href="mailto:me@joealden.com"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <email-icon></email-icon>
-            </a>
-          </div>
+    </div>
+    <div id="contact-links">
+      <div id="contact-links-inner">
+        <div class="contact-item">
+          <a
+            href="mailto:me@joealden.com"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <email-icon></email-icon>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a
+            href="https://twitter.com/joealden_"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <twitter-icon></twitter-icon>
+          </a>
         </div>
       </div>
     </div>
@@ -52,15 +43,13 @@
 </template>
 
 <script>
-import GithubIcon from "@/components/GithubIcon.vue";
-import TwitterIcon from "@/components/TwitterIcon.vue";
 import EmailIcon from "@/components/EmailIcon.vue";
+import TwitterIcon from "@/components/TwitterIcon.vue";
 
 export default {
   components: {
-    GithubIcon,
-    TwitterIcon,
-    EmailIcon
+    EmailIcon,
+    TwitterIcon
   }
 };
 </script>
@@ -104,4 +93,27 @@ export default {
     margin-bottom: 30px;
   }
 }
-</style>
+
+#contact-links {
+  margin: 90px 0;
+  width: 100%;
+  max-width: 1660px;
+}
+
+#contact-links-inner {
+  display: flex;
+}
+
+.contact-item {
+  a {
+    display: block;
+    padding: 30px;
+
+    svg {
+      display: block;
+      stroke: black;
+      fill: white;
+    }
+  }
+}
+</style> 
