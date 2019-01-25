@@ -13,6 +13,5 @@
   - Linux and PC building enthusiast.
 - Write copy for Contact page and insert it
   - Best way to contact me is either by email or twitter DM
-- Ask Jsutts for changes to the images
-- Get images compressed so they aren't massive
+- Ask Jsutts for changes to the images + Umoro + px-to-vw images
 - Write README
