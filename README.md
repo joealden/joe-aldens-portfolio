@@ -11,8 +11,8 @@
     developers, and in general, faster programs for our users.
   - Passionate about Free and Open Source Software (FOSS)
   - Linux and PC building enthusiast.
-
-* Add github portfolio link to top right of navigation
-* Ask Jsutts for changes to the images
-* Get images compressed so they aren't massive
-* Write README
+- Write copy for Contact page and insert it
+  - Best way to contact me is either by email or twitter DM
+- Ask Jsutts for changes to the images
+- Get images compressed so they aren't massive
+- Write README
