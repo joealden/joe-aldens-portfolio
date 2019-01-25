@@ -168,8 +168,52 @@ export default {
               link: "https://zeit.co/now"
             }
           ]
+        },
+        {
+          name: "Umoro",
+          description: "An E-commerce Site",
+          image: corumImage,
+          link: "https://umoro.com",
+          tags: [
+            {
+              name: "Shopify",
+              link: "https://www.shopify.co.uk/"
+            },
+            {
+              name: "Liquid Templating Language",
+              link: "https://shopify.github.io/liquid/"
+            },
+            {
+              name: "SCSS",
+              link: "https://sass-lang.com/"
+            }
+          ]
+        },
+        {
+          name: "px-to-vw",
+          description: "A Pixel to Viewport Width Converter",
+          image: corumImage,
+          link: "https://vw.joealden.com",
+          githubLink: "https://github.com/joealden/px-to-vw",
+          tags: [
+            {
+              name: "React",
+              link: "https://reactjs.org/"
+            },
+            {
+              name: "Gatsby",
+              link: "https://www.gatsbyjs.org/"
+            },
+            {
+              name: "Styled Components",
+              link: "https://www.styled-components.com/"
+            },
+            {
+              name: "Netlify",
+              link: "https://www.netlify.com/"
+            }
+          ]
         }
-        /* TODO: Add px-to-vw */
       ]
     };
   }
