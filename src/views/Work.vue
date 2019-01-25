@@ -42,7 +42,7 @@ export default {
           name: "Listed",
           description: "A Design Resource Site",
           image: listedImage,
-          link: "https://listed.joealden.com",
+          link: "https://listed.design",
           githubLink: "https://github.com/joealden/listed",
           tags: [
             {
