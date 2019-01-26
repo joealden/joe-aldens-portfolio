@@ -29,6 +29,8 @@ import ContactLink from "@/components/ContactLink.vue";
 import listedImage from "@/assets/listed-thumbnail.jpg";
 import talqImage from "@/assets/talq-thumbnail.jpg";
 import corumImage from "@/assets/corum-thumbnail.jpg";
+import umoroImage from "@/assets/umoro-thumbnail.jpg";
+import vwImage from "@/assets/vw-thumbnail.jpg";
 
 export default {
   components: {
@@ -172,7 +174,7 @@ export default {
         {
           name: "Umoro",
           description: "An E-commerce Site",
-          image: corumImage,
+          image: umoroImage,
           link: "https://umoro.com",
           tags: [
             {
@@ -192,7 +194,7 @@ export default {
         {
           name: "px-to-vw",
           description: "A Pixel to Viewport Width Converter",
-          image: corumImage,
+          image: vwImage,
           link: "https://vw.joealden.com",
           githubLink: "https://github.com/joealden/px-to-vw",
           tags: [
