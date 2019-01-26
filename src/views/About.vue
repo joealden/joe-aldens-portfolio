@@ -26,7 +26,7 @@
             Outside of work, when I'm not learning more about the tech I use in
             my work, I like to engage in other computing related things. I'm
             extremely passionate about everything FOSS (Free and Open Source
-            Sofware). This means that when I can, I actively use and contribute
+            Software). This means that when I can, I actively use and contribute
             my time to the projects I care about the most. This is usually in the
             form of code contributions and documentation fixes, as well as helping
             people when they get stuck.
