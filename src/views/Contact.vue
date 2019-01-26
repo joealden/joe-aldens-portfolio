@@ -8,6 +8,8 @@
         <p>
           If you are in need of a developer and like my work, please feel free
           to get touch!
+        </p>
+        <p>
           The best ways of contacting me are by email or via Twitter DMs. Both of
           these are linked below.
         </p>
@@ -78,7 +80,7 @@ export default {
 
 #paragraphs-wrapper {
   color: #9b9b9b;
-  max-width: 650px;
+  max-width: 750px;
 
   p {
     margin: 0;
