@@ -312,10 +312,6 @@ export default {
           }
         ],
         {
-          name: "Contentful",
-          link: "https://www.contentful.com/"
-        },
-        {
           name: "Webpack",
           link: "https://webpack.js.org/"
         },
@@ -330,6 +326,10 @@ export default {
         {
           name: "Ramda",
           link: "https://ramdajs.com/"
+        },
+        {
+          name: "Contentful",
+          link: "https://www.contentful.com/"
         },
         {
           name: "Netlify",
