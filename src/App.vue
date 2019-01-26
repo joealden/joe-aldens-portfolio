@@ -120,6 +120,22 @@ a {
     &.router-link-exact-active {
       color: black;
     }
+
+    @media screen and (max-width: 420px) {
+      padding: 20px;
+
+      &:first-child {
+        padding: 20px 20px 20px 30px;
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+      padding: 15px;
+
+      &:first-child {
+        padding: 15px 15px 15px 30px;
+      }
+    }
   }
 }
 
