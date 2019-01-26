@@ -7,20 +7,34 @@
         </div>
         <div id="paragraphs-wrapper">
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt.
+            I'm a software developer currently working on all things Web.
+            This means that I focus most of my time developing things in JavaScript
+            and other languages that have Web compile targets (TypeScript, Reason
+            and Rust). I also have plenty of experience with other Web technologies
+            such as HTML and CSS.
           </p>
           <p>
-            Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur?
+            When building new sites, I really enjoy using modern front-end
+            libraries like React and Vue to both get the job done efficently,
+            and to keep me from going mad. They make it a breeze to build fast,
+            maintainable, and reliable sites, all while making the DX (Developer
+            Experience) top notch! After building many sites in these declarative
+            frameworks, I never want to go back to the old imperative ways of
+            jQuery and manual DOM manipulation!
+          </p>
+          <p>
+            Outside of work, when I'm not learning more about the tech I use in
+            my work, I like to engage in other computing related things. I'm
+            extremely passionate about everything FOSS (Free and Open Source
+            Sofware). This means that when I can, I actively use and contribute
+            my time to the projects I care about the most. This is usually in the
+            form of code contributions and documentation fixes, as well as helping
+            people when they get stuck.
+          </p>
+          <p>
+            Below you will find the languages, libraries, tools and techniques
+            that I have experience using, as well as those that I want to get more
+            experienced with.
           </p>
         </div>
         <div id="technology-lists">
@@ -135,7 +149,7 @@
 
 #paragraphs-wrapper {
   color: #9b9b9b;
-  max-width: 720px;
+  max-width: 950px;
 
   p {
     margin: 0;
