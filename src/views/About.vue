@@ -18,7 +18,7 @@
             frameworks like React and Vue to both get the job done efficently,
             and to keep me from going mad. They make it a breeze to build fast,
             maintainable, and reliable sites, all while making the DX (Developer
-            Experience) top notch! After building many sites in these declarative
+            Experience) top-notch! After building many sites in these declarative
             frameworks, I never want to go back to the old imperative ways of
             jQuery and manual DOM manipulation!
           </p>
