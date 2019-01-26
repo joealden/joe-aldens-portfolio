@@ -26,9 +26,9 @@
 import Project from "@/components/Project.vue";
 import ContactLink from "@/components/ContactLink.vue";
 
-import listedImage from "@/assets/listed-showcase.png";
-import talqImage from "@/assets/talq-showcase.png";
-import corumImage from "@/assets/corum-showcase.png";
+import listedImage from "@/assets/listed-thumbnail.jpg";
+import talqImage from "@/assets/talq-thumbnail.jpg";
+import corumImage from "@/assets/corum-thumbnail.jpg";
 
 export default {
   components: {
