@@ -6,14 +6,10 @@
       </div>
       <div id="paragraphs-wrapper">
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-          quae ab illo inventore veritatis et quasi architecto beatae vitae
-          dicta sunt explicabo.
-        </p>
-        <p>
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+          If you are in need of a developer and like my work, please feel free
+          to get touch!
+          The best ways of contacting me are by email or via Twitter DMs. Both of
+          these are linked below.
         </p>
       </div>
     </div>
@@ -82,7 +78,7 @@ export default {
 
 #paragraphs-wrapper {
   color: #9b9b9b;
-  max-width: 720px;
+  max-width: 650px;
 
   p {
     margin: 0;
