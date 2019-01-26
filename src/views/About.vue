@@ -15,7 +15,7 @@
           </p>
           <p>
             When building new sites, I really enjoy using modern front-end
-            libraries like React and Vue to both get the job done efficently,
+            frameworks like React and Vue to both get the job done efficently,
             and to keep me from going mad. They make it a breeze to build fast,
             maintainable, and reliable sites, all while making the DX (Developer
             Experience) top notch! After building many sites in these declarative
