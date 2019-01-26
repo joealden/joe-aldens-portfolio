@@ -19,6 +19,7 @@
           </div>
           <div class="project-github-link">
             <a
+              v-if="githubLink !== undefined"
               :href="githubLink"
               rel="noreferrer noopener"
               target="_blank"
@@ -269,7 +270,6 @@ export default {
         height: 5vw;
         min-width: 40px;
         min-height: 40px;
-        stroke: black;
       }
     }
   }
