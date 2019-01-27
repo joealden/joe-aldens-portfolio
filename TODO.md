@@ -1,6 +1,5 @@
 # TODO
 
-- Finish Portfolio
 - Write up CV with the following:
   - Experience
     - Remote work 2018-Present
