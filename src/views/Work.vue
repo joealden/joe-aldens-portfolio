@@ -233,6 +233,10 @@ export default {
   width: 100%;
   max-width: 1660px;
   padding: 0 30px;
+
+  @media screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
 }
 
 #header {

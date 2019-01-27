@@ -121,11 +121,17 @@ a {
       color: black;
     }
 
+    @media screen and (max-width: 600px) {
+      &:first-child {
+        padding: 30px 30px 30px 20px;
+      }
+    }
+
     @media screen and (max-width: 420px) {
       padding: 20px;
 
       &:first-child {
-        padding: 20px 20px 20px 30px;
+        padding: 20px;
       }
     }
 
@@ -133,7 +139,7 @@ a {
       padding: 15px;
 
       &:first-child {
-        padding: 15px 15px 15px 30px;
+        padding: 15px 15px 15px 20px;
       }
     }
   }
@@ -144,6 +150,10 @@ a {
 
   a {
     padding: 20px 30px;
+
+    @media screen and (max-width: 600px) {
+      padding: 20px;
+    }
 
     svg {
       display: block;
