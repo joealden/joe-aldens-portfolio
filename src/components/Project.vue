@@ -13,10 +13,15 @@
       </div>
       <div class="project-details-and-tags">
         <div class="project-details">
-          <div class="project-name-and-description">
+          <a
+            :href="link"
+            rel="noreferrer noopener"
+            target="_blank"
+            class="project-name-and-description"
+          >
             <h3>{{ name }}</h3>
             <h4>{{ description }}</h4>
-          </div>
+          </a>
           <div class="project-github-link">
             <a
               v-if="githubLink !== undefined"
@@ -225,6 +230,10 @@ export default {
   h3,
   h4 {
     font-size: 1.1rem;
+  }
+
+  h3 {
+    color: black;
   }
 
   h4 {
