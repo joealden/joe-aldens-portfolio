@@ -1,4 +1,8 @@
-# joe-aldens-portfolio
+<h1 align="center">Joe Alden's Portfolio</h1>
+<p align="center">My Portfolio.</p>
+
+![Portfolio Screenshot](.github/screenshot.png)
+
 
 ## TODO
 
