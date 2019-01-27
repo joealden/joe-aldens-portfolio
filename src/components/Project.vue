@@ -90,8 +90,7 @@ export default {
       required: true
     },
     githubLink: {
-      type: String,
-      required: true
+      type: String
     },
     tags: {
       /**
