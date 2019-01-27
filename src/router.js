@@ -1,9 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
+import RouterPrefetch from "vue-router-prefetch";
 
 import Work from "./views/Work.vue";
 
 Vue.use(Router);
+Vue.use(RouterPrefetch);
 
 export default new Router({
   routes: [
