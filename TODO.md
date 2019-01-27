@@ -39,7 +39,7 @@
   - Other
     - Email - me@joealden.com
     - Portfolio - joealden.com
-- Write READMEs for Listed, Talq and Corum
+- Write READMEs for portfolio, cv, Listed, Talq and Corum
 - Attempt to fix two signin issues with talq, or just document that they exist
   in the README.
 - Make sure JSutts has written the about copy for Listed
