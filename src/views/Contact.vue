@@ -22,6 +22,7 @@
             href="mailto:me@joealden.com"
             rel="noreferrer noopener"
             target="_blank"
+            title="Link to my email"
           >
             <email-icon></email-icon>
           </a>
@@ -31,6 +32,7 @@
             href="https://twitter.com/joealden_"
             rel="noreferrer noopener"
             target="_blank"
+            title="Link to my Twitter page"
           >
             <twitter-icon></twitter-icon>
           </a>

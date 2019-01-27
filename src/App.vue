@@ -12,6 +12,7 @@
             href="https://github.com/joealden"
             rel="noreferrer noopener"
             target="_blank"
+            title="Link to my Github page"
           >
             <github-icon></github-icon>
           </a>
