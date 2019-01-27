@@ -227,6 +227,8 @@ export default {
 }
 
 .project-name-and-description {
+  margin-right: 50px;
+
   h3,
   h4 {
     font-size: 1.1rem;
@@ -242,7 +244,6 @@ export default {
 
     @media screen and (max-width: 600px) {
       font-size: 1rem;
-      margin-right: 50px;
     }
   }
 }
