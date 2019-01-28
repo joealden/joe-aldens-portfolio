@@ -264,6 +264,10 @@ export default {
           name: "Node",
           link: "https://nodejs.org/en/about/"
         },
+        {
+          name: "Yarn",
+          link: "https://yarnpkg.com/lang/en/"
+        },
         [
           {
             name: "React",
