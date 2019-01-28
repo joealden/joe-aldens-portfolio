@@ -21,7 +21,6 @@
           <a
             href="mailto:me@joealden.com"
             rel="noreferrer noopener"
-            target="_blank"
             title="Link to my email"
           >
             <email-icon></email-icon>
