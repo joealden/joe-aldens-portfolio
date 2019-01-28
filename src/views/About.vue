@@ -226,6 +226,10 @@ export default {
     return {
       techIHaveExperienceWith: [
         {
+          name: "Git",
+          link: "https://git-scm.com/"
+        },
+        {
           name: "HTML (HTML5)",
           link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/"
         },
