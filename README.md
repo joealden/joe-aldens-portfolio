@@ -3,13 +3,36 @@
 
 ![Portfolio Screenshot](.github/screenshot.png)
 
+## Setup
 
-## TODO
+Download dependencies:
 
-- Create "Tech Used" section
-- Create "Usage" section
-- Create "Notes" section
-  - Using vue-router history mode
-  - robots.txt + web manifest
-  - Auto image compression in prod builds only with `image-webpack-loader`
-  - Sync download of all pages (why instead of lazy)
+```bash
+yarn
+```
+
+Start development server:
+
+```bash
+yarn dev
+```
+
+Build production files:
+
+```bash
+yarn build
+```
+
+## Tech Used
+
+- Vue
+- Vue CLI 3
+- Vue Router
+- SCSS
+
+## Notes
+
+- Using vue-router history mode for cleaner URLs.
+- robots.txt + web manifest for better SEO and PWA adherence.
+- Auto image compression in production builds only with `image-webpack-loader`.
+- Syncronously download all pages so that page navigations are fast.
